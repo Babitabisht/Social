@@ -17,15 +17,13 @@ const Users = () => {
              cleanup
          } */
     },
-     []
-    );
-
-
-
-    return (
+    [dispatch]
+);
+    
+  return (
         <Fragment>
 
-        <CarouselItem users={users} />
+              <CarouselItem users={users} />
 
         </Fragment>
     );
