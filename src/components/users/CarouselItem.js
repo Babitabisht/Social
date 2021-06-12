@@ -8,7 +8,7 @@ const CarouselItem = (props) => {
     return (
         <Carousel>
             {props.users.map(user => {
-                return <Carousel.Item className="text-center bg-dark">
+                return <Carousel.Item key={user.id} className="text-center bg-dark">
                     <img
 
                         className="text-center"
