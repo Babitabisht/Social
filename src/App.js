@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Users from './components/users/Users';
+import { Row, Col } from 'react-bootstrap';
+import {Fragment} from 'react';
+import UserCards from './components/users/UserCards';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Fragment>
+      <Row>
+           <Col>
+                <Users />
+           </Col>
+      </Row>
+      <Row>
+           <Col>
+                <UserCards />
+           </Col>
+      </Row>
+     
+    </Fragment>
   );
 }
 
